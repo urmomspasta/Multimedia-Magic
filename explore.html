@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HTML SET UP -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore - Multimedia Magic</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+
+<!-- BODY -->
+
+<body>
+    <!-- NOTIFICATION HEADER BAR -->
+    <header>
+        <div class="page-wrapper">
+            <div class="nav-wrapper">
+                <span class="grad-bar">Free Shipping on orders over $50! *</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVIGATION BAR -->
+
+    <nav class="navbar">
+        <img src="https://i.postimg.cc/zGmWsGyP/multimedia-magic-low-resolution-logo-black-on-transparent-background-1.png">
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav no-search">
+            <li class="nav-item"><a href="aboutus.html">ABOUT US</a></li>
+            <li class="nav-item">
+                <a>&nbsp</a>
+                <a>&nbsp</a>
+                <a href="index.html">HOME</a>
+            </li>
+            <li class="nav-item"><a href="explore.html" style="color: #BB84E8; font-weight: 600">EXPLORE</a></li>
+            <li class="nav-item"><a href="contactus.html">CONTACT US</a></li>
+            <i class="fas fa-shopping-cart" id="cart-icon">
+                <span class="red-dot" id="cart-indicator"></span>
+            </i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <input class="search-input" type="text" placeholder="Search.."></input>
+        </ul>
+    </nav>
+
+    <!-- HOME PAGE COVER -->
+
+    <section class="headline-explore">
+        <div>
+            <h1>Explore</h1>
+            <p>Shop All Products</p>
+            <h4 style="color: white; font-weight: 100; font-size: 0.8rem;">*Please note each product is unique, multibuy is not an option. Once gone, always gone - please enquire if you would like a special request.</h4>
+        </div>
+    </section>
+
+    <!-- FEATURED CATEGORIES -->
+
+    <section class="featureditems-headline">
+        <div>
+            <h1 class="line2">Earrings</h1>
+        </div>
+    </section>
+
+    <section class="featureditems">
+        <div class="featureditems-container">
+            <div class="image-container">
+                <img src="https://i.postimg.cc/nL2DwNRV/image.png" alt="Featured Categories">
+            </div>
+            <h2>Rose Resin Earrings</h2>
+            <div class="price-and-cart">
+                <p>$15</p>
+                <i class="fas fa-cart-plus add-to-cart-icon" data-product="1"></i>
+            </div>
+        </div>
+        <div class="featureditems-container">
+            <div class="image-container">
+                <img src="https://i.postimg.cc/T2FkTHGY/image.png" alt="Featured Categories">
+            </div>
+            <h2>Elegant Rose Earrings</h2>
+            <div class="price-and-cart">
+                <p>$20</p>
+                <i class="fas fa-cart-plus add-to-cart-icon" data-product="2"></i>
+            </div>
+        </div>
+        <div class="featureditems-container">
+            <img src="https://i.postimg.cc/7YzTy5sW/image.png" alt="Featured Categories">
+            <h2>Tear Drop Earrings</h2>
+            <div class="price-and-cart">
+                <p>$35</p>
+                <i class="fas fa-cart-plus add-to-cart-icon" data-product="3"></i>
+            </div>
+        </div>
+        <div class="featureditems-container">
+            <img src="https://i.postimg.cc/QtWTmmz0/image.png" alt="Featured Categories">
+            <h2>Geometric Flower Earrings</h2>
+            <div class="price-and-cart">
+                <p>$15</p>
+                <i class="fas fa-cart-plus add-to-cart-icon" data-product="4" style="float:right"></i>
+            </div>
+        </div>
+        <div class="featureditems-container">
+            <img src="https://i.postimg.cc/44DrW3Y5/image.png" alt="Featured Categories">
+            <h2>Oval Flower Earrings</h2>
+            <div class="price-and-cart">
+                <p>$15</p>
+                <i class="fas fa-cart-plus add-to-cart-icon" data-product="5" style="float:right"></i>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="cart-display" style="display:none">
+            Cart contents will be displayed here
+        </div>
+    </section>
+
+    <section class="featureditems-headline">
+        <div>
+            <h1 class="line2">Bags</h1>
+        </div>
+    </section>
+
+    <section class="featureditems">
+        <div class="featureditems-container">
+            <div class="image-container">
+                <img src="https://i.postimg.cc/WzGFgKkP/image.png" alt="Featured Categories">
+            </div>
+            <h2>Rose Embroidered Bag</h2>
+            <div class="price-and-cart">
+                <p>$40</p>
+                <i class="fas fa-cart-plus add-to-cart-icon" data-product="6"></i>
+            </div>
+        </div>
+        <div class="featureditems-container">
+            <div class="image-container">
+                <img src="https://i.postimg.cc/CMcH9WQQ/image.png" alt="Featured Categories">
+            </div>
+            <h2>Frida Kahlo Bag - Pink and Denim</h2>
+            <div class="price-and-cart">
+                <p>$45</p>
+                <i class="fas fa-cart-plus add-to-cart-icon" data-product="7"></i>
+            </div>
+        </div>
+        <div class="featureditems-container">
+            <img src="https://i.postimg.cc/t4BsgjFK/image.png" alt="Featured Categories">
+            <h2>Frida Kahlo Bag - Spotted White Canvas</h2>
+            <div class="price-and-cart">
+                <p>$40</p>
+                <i class="fas fa-cart-plus add-to-cart-icon" data-product="8"></i>
+            </div>
+        </div>
+        <div class="featureditems-container">
+            <img src="https://i.postimg.cc/8zkLPwf0/image.png" alt="Featured Categories">
+            <h2> Personalised Denim Bag Range</h2>
+            <div class="price-and-cart">
+                <p>Enquire for price</p>
+                <a href="contactus.html">Contact</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="featureditems-headline">
+        <div>
+            <h1 class="line2">Drinkware</h1>
+        </div>
+    </section>
+
+    <section class="featureditems">
+        <div class="featureditems-container">
+            <div class="image-container">
+                <img src="https://i.postimg.cc/dQWd1GvH/image.png" alt="Featured Categories">
+            </div>
+            <h2>Personalised Mug Deal</h2>
+            <div class="price-and-cart">
+                <div style="color:crimson">$20 &nbsp;<p style="text-decoration:line-through; display:inline;">$30</p></div>
+                <i class="fas fa-cart-plus add-to-cart-icon" data-product="9"></i>
+            </div>
+        </div>
+        <div class="featureditems-container">
+            <div class="image-container">
+                <img src="https://i.postimg.cc/Ssk8XrJ5/image.png" alt="Featured Categories">
+            </div>
+            <h2>Personalised Mug - Mens</h2>
+            <div class="price-and-cart">
+                <p>$15</p>
+                <i class="fas fa-cart-plus add-to-cart-icon" data-product="10"></i>
+            </div>
+        </div>
+        <div class="featureditems-container">
+            <img src="https://i.postimg.cc/tRDdxLdz/image.png" alt="Featured Categories">
+            <h2>Personalised Mug - Womens</h2>
+            <div class="price-and-cart">
+                <p>$15</p>
+                <i class="fas fa-cart-plus add-to-cart-icon" data-product="11"></i>
+            </div>
+        </div>
+        <div class="featureditems-container">
+            <img src="https://i.postimg.cc/BbyXCcnJ/image.png" alt="Featured Categories">
+            <h2>Personalised Drink Bottle</h2>
+            <div class="price-and-cart">
+                <p>$25</p>
+                <i class="fas fa-cart-plus add-to-cart-icon" data-product="12"></i>
+            </div>
+        </div>
+    </section>
+
+    <section class="featureditems-headline">
+        <div>
+            <h1 class="line2">Car Decals</h1>
+        </div>
+    </section>
+
+    <section class="featureditems">
+        <div class="featureditems-container">
+            <div class="image-container">
+                <img src="https://i.postimg.cc/FRwYyVRN/image.png" alt="Featured Categories">
+            </div>
+            <h2>Fuel Cap Decal</h2>
+            <div class="price-and-cart">
+                <p>$10</p>
+                <i class="fas fa-cart-plus add-to-cart-icon" data-product="13"></i>
+            </div>
+        </div>
+        <div class="featureditems-container">
+            <div class="image-container">
+                <img src="https://i.postimg.cc/rFPPSdGg/image.png" alt="Featured Categories">
+            </div>
+            <h2>Stitch! <p>(from Lilo and Stitch)</p></h2>
+            <div class="price-and-cart">
+                <p>$17</p>
+                <i class="fas fa-cart-plus add-to-cart-icon" data-product="14"></i>
+            </div>
+        </div>
+        <div class="featureditems-container">
+            <img src="https://i.postimg.cc/3RfgPGxc/image.png" alt="Featured Categories">
+            <h2>Yoda <p>(from Star Wars series)</p></h2>
+            <div class="price-and-cart">
+                <p>$15</p>
+                <i class="fas fa-cart-plus add-to-cart-icon" data-product="15"></i>
+            </div>
+        </div>
+        <div class="featureditems-container">
+            <img src="https://i.postimg.cc/Y0jJHQfG/image.png" alt="Featured Categories">
+            <h2>Rear Window Decal</h2>
+            <div class="price-and-cart">
+                <p>$20</p>
+                <i class="fas fa-cart-plus add-to-cart-icon" data-product="16"></i>
+            </div>
+        </div>
+        <div class="featureditems-container">
+            <img src="https://i.postimg.cc/qgVQ5Kmd/image.png" alt="Featured Categories">
+            <h2>Toyoda Decal</h2>
+            <div class="price-and-cart">
+                <p>$23</p>
+                <i class="fas fa-cart-plus add-to-cart-icon" data-product="17"></i>
+            </div>
+        </div>
+    </section>
+    <section class="featureditems">
+        <div class="featureditems-container">
+            <div class="image-container">
+                <img src="https://i.postimg.cc/ZKHVcWrX/image.png" alt="Featured Categories">
+            </div>
+            <h2>Stitch Bumper Sticker</h2>
+            <div class="price-and-cart">
+                <p>$20</p>
+                <i class="fas fa-cart-plus add-to-cart-icon" data-product="18"></i>
+            </div>
+        </div>
+        <div class="featureditems-container">
+            <div class="image-container">
+                <img src="https://i.postimg.cc/nchvn0Dw/image.png" alt="Featured Categories">
+            </div>
+            <h2>Hibiscus Flower Decal</h2>
+            <div class="price-and-cart">
+                <p>$8</p>
+                <i class="fas fa-cart-plus add-to-cart-icon" data-product="19"></i>
+            </div>
+        </div>
+        <div class="featureditems-container"></div>
+        <div class="featureditems-container"></div>
+        <div class="featureditems-container"></div>
+    </section>
+
+    <section class="featureditems-headline">
+        <div>
+            <h1 class="line2">Coasters</h1>
+        </div>
+    </section>
+
+    <div class="featureditems-headline">
+        <p style="color:#808080; font-size:16px;">* One 'set' includes 4 coasters.</p>
+    </div>
+
+    <section class="featureditems">
+        <div class="featureditems-container">
+            <div class="image-container">
+                <img src="https://i.postimg.cc/c4wQLMGG/image.png" alt="Featured Categories">
+            </div>
+            <h2>Coaster Couple Deal</h2>
+            <div class="price-and-cart">
+                <div style="color:crimson">$6 &nbsp;<p style="text-decoration:line-through; display:inline;">$8</p></div>
+                <i class="fas fa-cart-plus add-to-cart-icon" data-product="20"></i>
+            </div>
+        </div>
+        <div class="featureditems-container">
+            <div class="image-container">
+                <img src="https://i.postimg.cc/P5NTMKXB/image.png" alt="Featured Categories">
+            </div>
+            <h2>Geometric Royal Black Set</h2>
+            <div class="price-and-cart">
+                <p>$10 ($4 each)</p>
+                <i class="fas fa-cart-plus add-to-cart-icon" data-product="21"></i>
+            </div>
+        </div>
+        <div class="featureditems-container">
+            <img src="https://i.postimg.cc/pdRTJzS8/image.png" alt="Featured Categories">
+            <h2>Geometric Butterfly Set</h2>
+            <div class="price-and-cart">
+                <p>$10 ($4 each)</p>
+                <i class="fas fa-cart-plus add-to-cart-icon" data-product="22"></i>
+            </div>
+        </div>
+        <div class="featureditems-container">
+            <img src="https://i.postimg.cc/1zwdsNRW/image.png" alt="Featured Categories">
+            <h2>Geometric Gold Set</h2>
+            <div class="price-and-cart">
+                <p>$14 ($5 each)</p>
+                <i class="fas fa-cart-plus add-to-cart-icon" data-product="23"></i>
+            </div>
+        </div>
+        <div class="featureditems-container">
+            <img src="https://i.postimg.cc/HstPL7Mn/image.png" alt="Featured Categories">
+            <h2>Circular Garden Butterfly Set</h2>
+            <div class="price-and-cart">
+                <p>$16 ($6 each)</p>
+                <i class="fas fa-cart-plus add-to-cart-icon" data-product="24"></i>
+            </div>
+        </div>
+    </section>
+    <section class="featureditems">
+        <div class="featureditems-container">
+            <div class="image-container">
+                <img src="https://i.postimg.cc/NfLQ8Yxg/image.png" alt="Featured Categories">
+            </div>
+            <h2>Geometric Golden Flower Set</h2>
+            <div class="price-and-cart">
+                <p>$14 ($5 each)</p>
+                <i class="fas fa-cart-plus add-to-cart-icon" data-product="25"></i>
+            </div>
+        </div>
+        <div class="featureditems-container">
+            <div class="image-container">
+                <img src="https://i.postimg.cc/QxRZp7tb/image.png" alt="Featured Categories">
+            </div>
+            <h2>Geometric Fiery Flower Set</h2>
+            <div class="price-and-cart">
+                <p>$10 ($4 each)</p>
+                <i class="fas fa-cart-plus add-to-cart-icon" data-product="26"></i>
+            </div>
+        </div>
+        <div class="featureditems-container"></div>
+        <div class="featureditems-container"></div>
+        <div class="featureditems-container"></div>
+    </section>
+
+    <section class="featureditems-headline">
+        <div>
+            <h1 class="line2">More</h1>
+        </div>
+    </section>
+
+    <section class="featureditems">
+        <div class="featureditems-container">
+            <div class="image-container">
+                <img src="https://i.postimg.cc/9FSwZLZn/image.png" alt="Featured Categories">
+            </div>
+            <h2>Resin Bangle</h2>
+            <div class="price-and-cart">
+                <p>$4</p>
+                <i class="fas fa-cart-plus add-to-cart-icon" data-product="27"></i>
+            </div>
+        </div>
+        <div class="featureditems-container">
+            <div class="image-container">
+                <img src="https://i.postimg.cc/bN3cB53m/image.png" alt="Featured Categories">
+            </div>
+            <h2>Personalised Key Ring</h2>
+            <div class="price-and-cart">
+                <p>$5</p>
+                <i class="fas fa-cart-plus add-to-cart-icon" data-product="28"></i>
+            </div>
+        </div>
+        <div class="featureditems-container">
+            <div class="image-container">
+                <img src="https://i.postimg.cc/TYrh5T2p/image.png" alt="Featured Categories">
+            </div>
+            <h2>Frida Kahlo Crewneck</h2>
+            <div class="price-and-cart">
+                <p>$25</p>
+                <i class="fas fa-cart-plus add-to-cart-icon" data-product="29"></i>
+            </div>
+        </div>
+        <div class="featureditems-container">
+            <div class="image-container">
+                <img src="https://i.postimg.cc/nrhTj3BL/image.png" alt="Featured Categories">
+            </div>
+            <h2>Butterfly Pop Up Card</h2>
+            <div class="price-and-cart">
+                <p>$25</p>
+                <i class="fas fa-cart-plus add-to-cart-icon" data-product="30"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="container">
+                    <div class="col-md-4">
+                        <h6>Support</h6>
+                        <ul class="footer-links">
+                            <li><a href="myaccount.html">My Account</a></li>
+                            <li><a href="help.html">FAQ/Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="col-md-4">
+                        <h6>Connect</h6>
+                        <ul class="social-icons">
+                            <li><a class="instagram" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                            <li><a class="facebook" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+                            <li><a class="message" href="tel:+642123456789"><i class="fa fa-sms"></i></a></li>
+                            <li><a class="email" href="mailto:multimediamagic@gmail.com?subject=Query"><i class="fa fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="col-md-4">
+                        <h6>Contact</h6>
+                        <ul class="footer-links">
+                            <li><a class="message" href="tel:+642123456789">+64 21 234 56789</a></li>
+                            <li><a class="email" href="mailto:multimediamagic@gmail.com?subject=Query">multimediamagic@gmail.com</a></li>
+                            <li><a href="https://www.google.com/maps/dir//Eastern+Institute+Of+Technology,+Hawke%E2%80%99s+Bay+Campus+501+Gloucester+Street,+Taradale,+Napier+4112/@-39.5419548,176.8350512,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x6d69b4156a9c6573:0x6a5d15c4dd089b8b!2m2!1d176.8385542!2d-39.5469143?entry=ttu">ad. 123 Applebee Street, Taradale, Napier, 4112</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="copyright-text">&copy; Multimedia Magic &nbsp | &nbsp <a href="terms.html">TERMS</a> &nbsp |  &nbsp <a href="privacypolicy.html">PRIVACY POLICY</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LINK TO SCRIPTS -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+    <script>
+        function updateAddToCartIconsColor() {
+            const addToCartIcons = document.querySelectorAll(".add-to-cart-icon");
+            const storedCart = localStorage.getItem("cart");
+            const cart = storedCart ? JSON.parse(storedCart) : [];
+
+            addToCartIcons.forEach((icon) => {
+                const productID = icon.getAttribute("data-product");
+                const isProductInCart = cart.some((item) => item.productID === productID);
+
+                if (isProductInCart) {
+                    icon.classList.remove("fa-cart-plus");
+                    icon.classList.add("fa-check");
+                    icon.style.color = "#BB84E8";
+                } else {
+                    icon.classList.remove("fa-check");
+                    icon.classList.add("fa-cart-plus");
+                    icon.style.color = "#000000";
+                }
+            });
+        }
+
+        // Call the updateAddToCartIconsColor function when the page loads
+        document.addEventListener("DOMContentLoaded", function () {
+            updateAddToCartIconsColor();
+        });
+    </script>
+</body>
+</html>
+

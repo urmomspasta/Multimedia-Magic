@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HTML SET UP -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Multimedia Magic</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+
+<!-- BODY -->
+
+<body>
+    <!-- NOTIFICATION HEADER BAR -->
+    <header>
+        <div class="page-wrapper">
+            <div class="nav-wrapper">
+                <span class="grad-bar">Free Shipping on orders over $50! *</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVIGATION BAR -->
+
+    <nav class="navbar">
+        <img src="https://i.postimg.cc/zGmWsGyP/multimedia-magic-low-resolution-logo-black-on-transparent-background-1.png">
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav no-search">
+            <li class="nav-item"><a href="aboutus.html">ABOUT US</a></li>
+            <li class="nav-item">
+                <a>&nbsp</a>
+                <a>&nbsp</a>
+                <a href="index.html">HOME</a>
+            </li>
+            <li class="nav-item"><a href="explore.html">EXPLORE</a></li>
+            <li class="nav-item"><a href="contactus.html" style="color: #BB84E8; font-weight: 600">CONTACT US</a></li>
+            <i class="fas fa-shopping-cart" id="cart-icon">
+                <a href="cart.html"></a>
+            </i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <input class="search-input" type="text" placeholder="Search..">
+        </ul>
+    </nav>
+
+    <!-- HOME PAGE COVER -->
+
+    <section class="headline-contactus">
+        <div>
+            <h1>Contact Us</h1>
+            <p>Enquire Now!</p>
+        </div>
+    </section>
+
+    <!-- CONTACT US -->
+
+    <section class="contact-section">
+        <p class="contact-text">
+            If you would like your items personalized, a special message in the delivery for someone special, or you would just like to inquire regarding any issue, please fill out the form below.
+        </p>
+        <div class="divider"></div>
+        <h2 class="contact-heading">Let's see how we can help!</h2>
+        <p class="sub-heading">Write your details and message below.</p>
+        <div class="form-container">
+            <form action="send_email.php" method="post">
+                <div class="input-container">
+                    <input class="form-control" type="text" name="name" placeholder="Name" style="border-bottom: 2px solid #BB84E8;">
+                </div>
+                <div class="input-container">
+                    <input class="form-control" type="email" name="email" placeholder="Email" style="border-bottom: 2px solid #BB84E8;">
+                </div>
+            </form>
+        </div>
+        <textarea class="message-box" rows="20" maxlength="500" placeholder="Message..."></textarea>
+        <button class="send-button" id="send-button" type="submit">SEND MESSAGE</button>
+    </section>
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="container">
+                    <div class="col-md-4">
+                        <h6>Support</h6>
+                        <ul class="footer-links">
+                            <li><a href="myaccount.html">My Account</a></li>
+                            <li><a href="help.html">FAQ/Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="col-md-4">
+                        <h6>Connect</h6>
+                        <ul class="social-icons">
+                            <li><a class="instagram" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                            <li><a class="facebook" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+                            <li><a class="message" href="tel:+642123456789"><i class="fa fa-sms"></i></a></li>
+                            <li><a class="email" href="mailto:multimediamagic@gmail.com?subject=Query"><i class="fa fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="col-md-4">
+                        <h6>Contact</h6>
+                        <ul class="footer-links">
+                            <li><a class="message" href="tel:+642123456789">+64 21 234 56789</a></li>
+                            <li><a class="email" href="mailto:multimediamagic@gmail.com?subject=Query">multimediamagic@gmail.com</a></li>
+                            <li><a href="https://www.google.com/maps/dir//Eastern+Institute+Of+Technology,+Hawke%E2%80%99s+Bay+Campus+501+Gloucester+Street,+Taradale,+Napier+4112/@-39.5419548,176.8350512,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x6d69b4156a9c6573:0x6a5d15c4dd089b8b!2m2!1d176.8385542!2d-39.5469143?entry=ttu">ad. 123 Applebee Street, Taradale, Napier, 4112</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="copyright-text">&copy; Multimedia Magic &nbsp | &nbsp <a href="terms.html">TERMS</a> &nbsp |  &nbsp <a href="privacypolicy.html">PRIVACY POLICY</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LINK TO SCRIPTS -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+

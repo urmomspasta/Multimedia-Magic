@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HTML SET UP -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Multimedia Magic</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+
+<!-- BODY -->
+
+<body>
+    <!-- NOTIFICATION HEADER BAR -->
+    <header>
+        <div class="page-wrapper">
+            <div class="nav-wrapper">
+                <span class="grad-bar">Free Shipping on orders over $50! *</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVIGATION BAR -->
+
+    <nav class="navbar">
+        <img src="https://i.postimg.cc/zGmWsGyP/multimedia-magic-low-resolution-logo-black-on-transparent-background-1.png">
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav no-search">
+            <li class="nav-item"><a href="aboutus.html">ABOUT US</a></li>
+            <li class="nav-item">
+                <a>&nbsp</a>
+                <a>&nbsp</a>
+                <a href="index.html">HOME</a>
+            </li>
+            <li class="nav-item"><a href="explore.html">EXPLORE</a></li>
+            <li class="nav-item"><a href="contactus.html">CONTACT US</a></li>
+            <i class="fas fa-shopping-cart" id="cart-icon" style="color: #BB84E8; font-weight: 600"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <input class="search-input" type="text" placeholder="Search..">
+        </ul>
+    </nav>
+
+    <!-- HOME PAGE COVER -->
+
+    <section class="headline-shoppingcart">
+        <div>
+            <h1>Shopping Cart</h1>
+            <p>Review Your Purchase</p>
+        </div>
+    </section>
+
+    <!-- CART ITEMS -->
+    <section class="cart-items">
+        <div id="cart-display">
+            <!-- Cart contents will be displayed here -->
+            <!-- Add more cart items as needed -->
+        </div>
+
+        <div class="cart-total" id="cart-total">
+            <div class="line3">Total</div>
+            <div class="line4">Subtotal: $35</div>
+            <div class="line4">Shipping: $10</div>
+            <div style="margin-bottom: 10px;">Total: $45.00</div> <!-- Update this with the actual total price -->
+            <div class="individual-button"><a href="explore.html"><button class="modern-checkout">Continue Shopping</button></a></div>
+            <div class="individual-button"><a href="#"><button class="modern">Checkout ></button></a></div>
+        </div>
+    </section>
+
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="container">
+                    <div class="col-md-4">
+                        <h6>Support</h6>
+                        <ul class="footer-links">
+                            <li><a href="myaccount.html">My Account</a></li>
+                            <li><a href="help.html">FAQ/Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="col-md-4">
+                        <h6>Connect</h6>
+                        <ul class="social-icons">
+                            <li><a class="instagram" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                            <li><a class="facebook" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+                            <li><a class="message" href="tel:+642123456789"><i class="fa fa-sms"></i></a></li>
+                            <li><a class="email" href="mailto:multimediamagic@gmail.com?subject=Query"><i class="fa fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="col-md-4">
+                        <h6>Contact</h6>
+                        <ul class="footer-links">
+                            <li><a class="message" href="tel:+642123456789">+64 21 234 56789</a></li>
+                            <li><a class="email" href="mailto:multimediamagic@gmail.com?subject=Query">multimediamagic@gmail.com</a></li>
+                            <li><a href="https://www.google.com/maps/dir//Eastern+Institute+Of+Technology,+Hawke%E2%80%99s+Bay+Campus+501+Gloucester+Street,+Taradale,+Napier+4112/@-39.5419548,176.8350512,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x6d69b4156a9c6573:0x6a5d15c4dd089b8b!2m2!1d176.8385542!2d-39.5469143?entry=ttu">ad. 123 Applebee Street, Taradale, Napier, 4112</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="copyright-text">&copy; Multimedia Magic &nbsp | &nbsp <a href="terms.html">TERMS</a> &nbsp |  &nbsp <a href="privacypolicy.html">PRIVACY POLICY</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LINK TO SCRIPTS -->
+    <script>
+        function updateAddToCartIconsColor() {
+            const addToCartIcons = document.querySelectorAll(".add-to-cart-icon");
+            const storedCart = localStorage.getItem("cart");
+            const cart = storedCart ? JSON.parse(storedCart) : [];
+
+            addToCartIcons.forEach((icon) => {
+                const productID = icon.getAttribute("data-product");
+                const isProductInCart = cart.some((item) => item.productID === productID);
+
+                if (isProductInCart) {
+                    icon.classList.remove("fa-cart-plus");
+                    icon.classList.add("fa-check");
+                    icon.style.color = "#BB84E8";
+                } else {
+                    icon.classList.remove("fa-check");
+                    icon.classList.add("fa-cart-plus");
+                    icon.style.color = "#000000";
+                }
+            });
+        }
+
+        // Call the updateAddToCartIconsColor function when the page loads
+        document.addEventListener("DOMContentLoaded", function () {
+            updateAddToCartIconsColor();
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
